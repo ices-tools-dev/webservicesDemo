@@ -125,17 +125,27 @@
 
 % ______________________________________________________________________________
 
+% ______________________________________________________________________________
+
 \begin{frame}{Data formats}
-  \textbf{DATRAS}\\
-  \begin{minipage}{60ex}
-    \setlength\parindent{-15pt}
-    \blue\scriptsize\url{https://datras.ices.dk/WebServices/DATRASWebService.asmx/getCAdata?survey=NS-IBTS\&year=1965\&quarter=1}
-  \end{minipage}\\
-  \textbf{SAG}\\
-  
-  \textbf{SLD}\\
-  \blue\scriptsize\url{http://stocklist.ices.dk/services/odata4/StockListDWs4}
+  \begin{itemize}
+    \item[-] XML, POX
+    \item[-] JSON
+    \item[-] CSV
+  \end{itemize}
 \end{frame}
+
+% \begin{frame}{Data formats}
+%   \textbf{DATRAS}\\
+%   \begin{minipage}{60ex}
+%     \setlength\parindent{-15pt}
+%     \blue\scriptsize\url{https://datras.ices.dk/WebServices/DATRASWebService.asmx/getCAdata?survey=NS-IBTS\&year=1965\&quarter=1}
+%   \end{minipage}\\
+%   \textbf{SAG}\\
+
+%   \textbf{SLD}\\
+%   \blue\scriptsize\url{http://stocklist.ices.dk/services/odata4/StockListDWs4}
+% \end{frame}
 
 % ______________________________________________________________________________
 
@@ -191,76 +201,67 @@
 
 % ______________________________________________________________________________
 
-\begin{frame}[fragile]{icesDatras}{R package}
-\begin{semiverbatim}
-\r{library}(icesDatras)
-getSurveyList()
-getSurveyYearList("NS-IBTS")
-getSurveyYearQuarterList("NS-IBTS", 1965)
-getCAdata("NS-IBTS", 1965, 1)
-getHHdata("NS-IBTS", 1965, 1)
-getHLdata("NS-IBTS", 1965, 1)
-getCatchWgt              function 22
-getDATRAS                function 30
-getDatrasDataOverview    function  9
-getHHdata                function  6
-getHLdata                function  6
-getSurveyList            function  3
-getSurveyYearList        function  4
-getSurveyYearQuarterList function  4
-\end{semiverbatim}
-\end{frame}
-
-% ______________________________________________________________________________
-
-\begin{frame}{Data formats}
-  \begin{itemize}
-    \item[-] XML, POX
-    \item[-] JSON
-    \item[-] CSV
-  \end{itemize}
-\end{frame}
+% \begin{frame}[fragile]{icesDatras}{R package}
+% \begin{semiverbatim}
+% \r{library}(icesDatras)
+% getSurveyList()
+% getSurveyYearList("NS-IBTS")
+% getSurveyYearQuarterList("NS-IBTS", 1965)
+% getCAdata("NS-IBTS", 1965, 1)
+% getHHdata("NS-IBTS", 1965, 1)
+% getHLdata("NS-IBTS", 1965, 1)
+% getCatchWgt              function 22
+% getDATRAS                function 30
+% getDatrasDataOverview    function  9
+% getHHdata                function  6
+% getHLdata                function  6
+% getSurveyList            function  3
+% getSurveyYearList        function  4
+% getSurveyYearQuarterList function  4
+% \end{semiverbatim}
+% \end{frame}
 
 % ______________________________________________________________________________
 
 \begin{frame}{R}
-  Scientific data analysis, TAF
-  Interactive session, batch mode
+  Scientific data analysis, TAF\\[4ex]
+  Interactive session, batch mode\\[4ex]
   Scripts, functions, packages
 \end{frame}
 
 % ______________________________________________________________________________
 
 \begin{frame}{Reading data into R}
-  Tabular text file (CSV)
-  XML
-  JSON
+  Tabular text file (CSV)\\[4ex]
+  XML\\[4ex]
+  JSON\\[4ex]
 \end{frame}
 
 % ______________________________________________________________________________
 
 \begin{frame}{ICES packages for web services}
-  icesDatras
-  icesSAG
-  icesSLD
+  icesDatras\\[4ex]
+  icesSAG\\[4ex]
+  icesSLD\\[4ex]
   icesVocab
 \end{frame}
 
 % ______________________________________________________________________________
 
 \begin{frame}{Handling unusual data}
-  NA
-  Whitespace
+  NA\\[4ex]
+  Whitespace\\[4ex]
   International characters
 \end{frame}
 
 % ______________________________________________________________________________
 
 \begin{frame}{Possible improvements}
-  Select species from DATRAS, CSV format
-  Get survey indices (and other data products) from DATRAS into R
-  [Data products could be provided using web service operators]
-  [Or R functions somewhere]
+  Select species from DATRAS, CSV format\\[4ex]
+  Get survey indices (and other data products) from DATRAS into R\\[4ex]
+  Commercial catch-at-age web services\\[4ex]
+  [Data products could be provided using web service operators,\\[1ex]
+  or R functions somewhere]
 \end{frame}
 
 \end{document}
