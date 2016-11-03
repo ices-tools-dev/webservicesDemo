@@ -6,5 +6,8 @@ slides/webservices.pdf
 slides/webservices.snm
 slides/webservices.toc
 slides/webservices.vrb
+slides/webservices.synctex.gz
 .Rproj.user
 *.Rproj
+shapefiles/*
+zips/*
